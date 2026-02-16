@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Side Menu -->
+        <aside class="side-menu">
+            <!-- Logo Section -->
+            <div class="logo-frame">
+                <div class="logo-group">
+                    <svg class="settings-icon" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                        <circle cx="18.5" cy="18.5" r="11.56" stroke="#FFFFFF" stroke-width="1.5"/>
+                        <path d="M18.5 2.1V6.52" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M18.5 30.48V34.9" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M9.6 18.5H5.11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M31.89 18.5H27.4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M15.42 9.6L12.72 6.52" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M24.28 30.48L21.58 27.4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M21.58 9.6L24.28 6.52" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M12.72 30.48L15.42 27.4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <h1 class="logo-text">Dashboard</h1>
+                    <span class="version">v.01</span>
+                </div>
+            </div>
+            
+            <!-- Active Menu Background -->
+            <div class="active-menu-bg"></div>
+            
+            <nav class="menu-nav">
+                <div class="menu-item active">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.99 13.39V16.48C10.99 17.37 11.71 18.1 12.6 18.1C13.49 18.1 14.21 17.37 14.21 16.48V13.39" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6 10.7C13.39 10.7 14.01 11.32 14.01 12.11C14.01 12.9 13.39 13.52 12.6 13.52C11.81 13.52 11.19 12.9 11.19 12.11C11.19 11.32 11.81 10.7 12.6 10.7Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="menu-text">Dashboard</span>
+                </div>
+                
+                <div class="menu-item">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.05 8.53V11.58" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 2V4" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 18V22" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 12H2" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 12H20" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.93 4.93L3.52 3.52" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.48 20.48L19.07 19.07" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.93 19.07L3.52 20.48" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.48 3.52L19.07 4.93" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="menu-text">Product</span>
+                    <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 4L10 8L6 12" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <div class="menu-item">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.67 16.22C8.67 16.22 9.67 15.22 12 15.22C14.33 15.22 15.33 16.22 15.33 16.22" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 11.01C12.83 11.01 13.5 10.34 13.5 9.51C13.5 8.68 12.83 8.01 12 8.01C11.17 8.01 10.5 8.68 10.5 9.51C10.5 10.34 11.17 11.01 12 11.01Z" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="menu-text">Monthly Tracker</span>
+                    <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 4L10 8L6 12" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <div class="menu-item">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M17.04 22.75H6.96C3.96 22.75 2.25 21.04 2.25 18.04V7.96C2.25 4.96 3.96 3.25 6.96 3.25H17.04C20.04 3.25 21.75 4.96 21.75 7.96V18.04C21.75 21.04 20.04 22.75 17.04 22.75Z" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 7.01V17.01" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 12.01H17" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="menu-text">Income</span>
+                    <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 4L10 8L6 12" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <div class="menu-item">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 16H12.01" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="menu-text">Promote</span>
+                    <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 4L10 8L6 12" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <div class="menu-item">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 6.11V12.01" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 13.1H12.01" stroke="#9197B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="menu-text">Help</span>
+                    <svg class="chevron-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 4L10 8L6 12" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </nav>
+            
+            <!-- Upgrade Banner -->
+            <div class="upgrade-banner">
+                <div class="upgrade-rectangle"></div>
+                <p class="upgrade-text">Upgrade to  PRO to get access all Features!</p>
+                <button class="upgrade-btn">
+                    <span class="btn-text">Get Pro Now!</span>
+                </button>
+            </div>
+            
+            <!-- User Profile Frame 1410087089 -->
+            <div class="user-profile-frame">
+                <img src="assets/images/user-avatar-97e96c.png" alt="User Avatar" class="user-avatar">
+                <div class="user-info-frame">
+                    <div class="user-info-group">
+                        <div class="user-name">Anik</div>
+                        <div class="user-role">Project Manager</div>
+                    </div>
+                    <svg class="chevron-down" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9L12 15L18 9" stroke="#757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h1 class="greeting">Hello Anik 👋🏼,</h1>
+                <div class="search-bar">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#4E4E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 22L20 20" stroke="#4E4E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="search-text">Search</span>
+                </div>
+            </header>
+            
+            <!-- Earning Cards -->
+            <section class="earning-section">
+                <div class="earning-card">
+                    <div class="card-icon earning-icon">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
+                            <circle cx="21" cy="21" r="21" fill="url(#gradient1)"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0" y1="0" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#D3FFE7"/>
+                                    <stop offset="1" stop-color="#EFFFF6"/>
+                                </linearGradient>
+                            </defs>
+                            <text x="14" y="28" font-family="Poppins" font-size="20" font-weight="500" fill="#00AC4F">₹</text>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-label">Earning</div>
+                        <div class="card-value">₹198k</div>
+                        <div class="card-change positive">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 5V15M10 5L5 10M10 5L15 10" stroke="#00AC4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>37.8% this month</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="earning-card">
+                    <div class="card-icon balance-icon">
+                        <img src="assets/images/balance-icon.svg" alt="Balance Icon" class="icon-svg">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-label">Balance</div>
+                        <div class="card-value">₹2.4k</div>
+                        <div class="card-change positive">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 5V15M10 5L5 10M10 5L15 10" stroke="#00AC4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>2% this month</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="earning-card">
+                    <div class="card-icon sales-icon">
+                        <img src="assets/images/sales-icon.svg" alt="Sales Icon" class="icon-svg">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-label">Total Sales</div>
+                        <div class="card-value">₹89k</div>
+                        <div class="card-change positive">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 5V15M10 5L5 10M10 5L15 10" stroke="#00AC4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>11% this week</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Overview Section -->
+            <section class="overview-section">
+                <div class="overview-header">
+                    <div>
+                        <h2 class="overview-title">Overview</h2>
+                        <p class="overview-subtitle">Monthly Earning</p>
+                    </div>
+                    <div class="dropdown">
+                        <span>Quarterly</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="#7E7E7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-bars">
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                    </div>
+                    <div class="chart-labels">
+                        <span>Jan</span>
+                        <span>Feb</span>
+                        <span>Mar</span>
+                        <span>Apr</span>
+                        <span>May</span>
+                        <span>Jun</span>
+                        <span>Jul</span>
+                        <span>Aug</span>
+                        <span>Sep</span>
+                        <span>Oct</span>
+                        <span>Nov</span>
+                        <span>Dec</span>
+                    </div>
+                </div>
+                
+                <div class="chart-indicator">
+                    <div class="indicator-bar"></div>
+                    <div class="indicator-content">
+                        <span class="indicator-value">35%</span>
+                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none">
+                            <path d="M0 5L7 0L14 5" stroke="#00AC4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Customers Section -->
+            <section class="customers-section">
+                <h2 class="section-title">Customers</h2>
+                <p class="section-subtitle">Customers that buy products</p>
+                
+                <div class="circular-chart">
+                    <svg width="229" height="229" viewBox="0 0 229 229">
+                        <circle cx="114.5" cy="114.5" r="84.5" stroke="#F1EFFB" stroke-width="20" fill="none"/>
+                        <circle cx="114.5" cy="114.5" r="84.5" stroke="url(#customerGradient)" stroke-width="20" fill="none" 
+                                stroke-dasharray="531" stroke-dashoffset="186" transform="rotate(-90 114.5 114.5)"/>
+                        <defs>
+                            <linearGradient id="customerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#EAABF0"/>
+                                <stop offset="100%" stop-color="#4623E9"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="chart-center">
+                        <div class="chart-percentage">65%</div>
+                        <div class="chart-label">Total New Customers</div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Product Section -->
+            <section class="product-section">
+                <div class="product-header">
+                    <h2 class="section-title">Product Sell</h2>
+                    <div class="product-controls">
+                        <div class="search-input">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 22L20 20" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="dropdown">
+                            <span>Last 30 days</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#7E7E7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-table-header">
+                    <span>Product Name</span>
+                    <span>Stock</span>
+                    <span>Price</span>
+                    <span>Total Sales</span>
+                </div>
+                
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="assets/images/product-1.png" alt="Abstract 3D" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Abstract 3D</h3>
+                            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="product-stock">32 in stock</div>
+                        <div class="product-price">₹ 45.99</div>
+                        <div class="product-sales">20</div>
+                    </div>
+                    
+                    <div class="product-item">
+                        <img src="assets/images/product-2.png" alt="Sarphens Illustration" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Sarphens Illustration</h3>
+                            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="product-stock">32 in stock</div>
+                        <div class="product-price">₹ 45.99</div>
+                        <div class="product-sales">20</div>
+                    </div>
+                    
+                    <div class="product-item">
+                        <img src="assets/images/product-3.png" alt="Landing Page 3D max" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Landing Page 3D max</h3>
+                            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="product-stock">32 in stock</div>
+                        <div class="product-price">₹ 45.99</div>
+                        <div class="product-sales">20</div>
+                    </div>
+                    
+                    <div class="product-item">
+                        <img src="assets/images/product-4.png" alt="Collab Illustration" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Collab Illustration</h3>
+                            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="product-stock">32 in stock</div>
+                        <div class="product-price">₹ 45.99</div>
+                        <div class="product-sales">20</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
